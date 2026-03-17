@@ -1,0 +1,93 @@
+baseURL = 'https://systemime.github.io/ai-agent-memory-research/'
+languageCode = 'zh-cn'
+title = 'AI Agent 记忆与自学习方案研究'
+theme = 'relearn'
+
+# 构建配置
+enableGitInfo = true
+enableRobotsTXT = true
+
+[params]
+  # 主题变体
+  themeVariant = ["auto", "relearn-light", "relearn-dark", "learn", "neon"]
+  # 禁用不必要的按钮
+  disableLandingPageButton = true
+  disableSeoHiddenPages = true
+  # 编辑链接
+  editURL = 'https://github.com/systemime/ai-agent-memory-research/edit/main/${FilePath}'
+  # 描述
+  description = "AI Agent 记忆与自学习方案全面调研报告"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 导航菜单
+[menu]
+  [[menu.main]]
+    identifier = "overview"
+    name = "概述"
+    url = "/README/"
+    weight = 1
+    pre = '<i class="fa-fw fas fa-home"></i>'
+
+  [[menu.main]]
+    identifier = "summary"
+    name = "综合摘要"
+    url = "/SUMMARY/"
+    weight = 2
+    pre = '<i class="fa-fw fas fa-clipboard-list"></i>'
+
+  [[menu.main]]
+    identifier = "memory"
+    name = "记忆架构"
+    url = "/memory-architecture/"
+    weight = 10
+    pre = '<i class="fa-fw fas fa-brain"></i>'
+
+  [[menu.main]]
+    identifier = "storage"
+    name = "存储加载"
+    url = "/storage-loading/"
+    weight = 20
+    pre = '<i class="fa-fw fas fa-database"></i>'
+
+  [[menu.main]]
+    identifier = "context"
+    name = "上下文管理"
+    url = "/context-management/"
+    weight = 30
+    pre = '<i class="fa-fw fas fa-layer-group"></i>'
+
+  [[menu.main]]
+    identifier = "learning"
+    name = "自学习方案"
+    url = "/self-learning/"
+    weight = 40
+    pre = '<i class="fa-fw fas fa-sync-alt"></i>'
+
+  [[menu.main]]
+    identifier = "deep"
+    name = "深入研究"
+    url = "/deep/DEEP-SUMMARY/"
+    weight = 50
+    pre = '<i class="fa-fw fas fa-microscope"></i>'
+
+# Markdown 渲染配置
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    noClasses = false
+    style = "monokai"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+# 首页配置
+[params.home]
+  title = "AI Agent 记忆与自学习方案研究"
+  subtitle = "一份关于 AI Agent 记忆系统、存储方案、上下文管理和自学习机制的全面调研报告"
