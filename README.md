@@ -2,12 +2,24 @@
 
 > 一份关于 AI Agent 记忆系统、存储方案、上下文管理和自学习机制的全面调研报告
 
-[![在线阅读](https://img.shields.io/badge/在线阅读-Hugo%20Relearn-blue?style=flat-square)](https://hugo-book-like.netlify.app/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-brightgreen?style=flat-square)](https://systemime.github.io/ai-agent-memory-research/)
+[![在线阅读](https://img.shields.io/badge/在线阅读-Netlify-blue?style=flat-square)](https://app.netlify.com/start)
+[![Deploy](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-orange?style=flat-square)](https://pages.cloudflare.com/)
 
 ## 📖 在线阅读
 
 本项目推荐使用 **[Hugo Relearn](https://github.com/McShelby/hugo-theme-relearn)** 主题渲染，获得最佳阅读体验。
+
+### 部署到 Netlify / Cloudflare Pages
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start)
+
+1. 点击上方按钮或访问 [Netlify](https://app.netlify.com/)
+2. 连接 GitHub 仓库 `systemime/ai-agent-memory-research`
+3. 构建命令: `hugo --gc --minify`
+4. 发布目录: `public`
+5. 设置环境变量: `HUGO_VERSION = 0.139.0`
+
+**Cloudflare Pages** 也支持，配置相同。
 
 ### 快速本地预览
 
