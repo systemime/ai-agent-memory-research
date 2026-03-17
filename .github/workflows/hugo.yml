@@ -37,16 +37,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
 
-      - name: Install Hugo modules
+      - name: Setup theme
         run: |
-          git submodule add https://github.com/McShelby/hugo-theme-relearn.git themes/relearn || true
+          if [ ! -d "themes/relearn" ]; then
+            git clone --depth 1 https://github.com/McShelby/hugo-theme-relearn.git themes/relearn
+          fi
 
       - name: Build with Hugo
         env:
